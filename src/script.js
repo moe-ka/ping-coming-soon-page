@@ -8,6 +8,10 @@ btnsubmitEl.addEventListener("click", function () {
     inputEl.classList.add("check");
     alertMsg.textContent = "please provide a valid email address";
   }
+  if (inputEl.value === "") {
+    inputEl.classList.add("check");
+    alertMsg.textContent = "please input an email address";
+  }
 });
 
 inputEl.addEventListener("input", function () {
